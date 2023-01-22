@@ -4,12 +4,17 @@ let numeroTrinta = 30
 let stringTrinta = '30'
 let numeroDez = 10
 let stringDez = '10'
+const nome = prompt("Qual o seu nome ?");
+const idade = prompt("Quantos anos você tem?");
+const programacao = prompt("Qua linguagem de programação você esta aprendendo ?");
+/*
 const cidade = prompt("Digite a sua cidade:");
 const msg = `Você é de ${cidade}!`;
 alert(msg);
+*/
 
 function escreveTela(){
-  document.write("ola");
+  document.write("Olá " + nome + ",você tem " + idade + " anos e já está aprendendo " + programacao);
 }
 escreveTela();
 
