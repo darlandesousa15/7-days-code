@@ -4,6 +4,14 @@ let numeroTrinta = 30
 let stringTrinta = '30'
 let numeroDez = 10
 let stringDez = '10'
+const cidade = prompt("Digite a sua cidade:");
+const msg = `Você é de ${cidade}!`;
+alert(msg);
+
+function escreveTela(){
+  document.write("ola");
+}
+escreveTela();
 
 if (numeroUm == stringUm) {
   console.log('As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes')
@@ -11,7 +19,7 @@ if (numeroUm == stringUm) {
   console.log('As variáveis numeroUm e stringUm não tem o mesmo valor')
 }
 
-if (numeroTrinta == stringTrinta) {
+if (numeroTrinta === stringTrinta) {
   console.log('As variáveis numeroTrinta e stringTrinta tem o mesmo valor e mesmo tipo')
 } else {
   console.log('As variáveis numeroTrinta e stringTrinta não tem o mesmo tipo')
