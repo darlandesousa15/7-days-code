@@ -1,3 +1,4 @@
+/*
 let numeroUm = 1
 let stringUm = '1'
 let numeroTrinta = 30
@@ -8,16 +9,34 @@ const nome = prompt("Qual o seu nome ?");
 const idade = prompt("Quantos anos você tem?");
 const programacao = prompt("Qua linguagem de programação você esta aprendendo ?");
 const estudando = prompt("Você gosta de estudar " + programacao + "? Responda com o número 1 para sim ou 2 para não.");
-/*
 const cidade = prompt("Digite a sua cidade:");
 const msg = `Você é de ${cidade}!`;
 alert(msg);
 */
+const controle = document.querySelectorAll("[data-front]");
 
+controle.forEach( (elemento) => {elemento.addEventListener("click", (evento) => 
+proximaMenssagem (evento.target.dataset.controle, evento.target.parentNode))
+})
+
+
+function proximaMenssagem (igual, controle){
+  
+  if ( igual === "front" ) {
+    alert("deu certo")
+    
+  } else {
+    alert("deu errado")
+  }
+
+}
+
+/*
 function escreveTela(){
   document.write("Olá " + nome + ",você tem " + idade + " anos e já está aprendendo " + programacao);
 }
 escreveTela();
+
 
 function linguagem(){
   if(estudando == "1"){
@@ -44,4 +63,4 @@ if (numeroDez == stringDez) {
   console.log('As variáveis numeroDez e stringDez tem o mesmo valor, mas tipos diferentes')
 } else {
   console.log('As variáveis numeroDez e stringDez não tem o mesmo valor')
-}
+} */
