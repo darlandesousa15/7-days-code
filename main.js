@@ -15,10 +15,10 @@ function frontBack () {
 }
 
 frontBack();
-
+const teste = prompt("Caso esteja na área de Front-End, você quer aprender React ou aprender Vue. Caso esteja na área de Back-End, irá preferir aprender C# ou aprender Java");
 function frontIfElse (){
   if (perguntaFront === "1" || perguntaFront == "front" || perguntaFront == "front-end"  || perguntaFront === "2" || perguntaFront === "back" || perguntaFront == "back-end" ){
-    prompt("Caso esteja na área de Front-End, você quer aprender React ou aprender Vue. Caso esteja na área de Back-End, irá preferir aprender C# ou aprender Java");
+    teste;
   } else {
     alert("VALOR INFORMADO INCORRETO - INFORME 1 PARA A PRIMEIRA OPÇÃO E 2 PARA A SEGUNDA");
     document.write("<b><h1>***RECOMESSE***<br>VALOR INFORMADO INCORRETO - INFORME 1 PARA A PRIMEIRA OPÇÃO E 2 PARA A SEGUNDA</h1></b>")
@@ -29,10 +29,11 @@ frontIfElse();
 const contador = 0;
 
 function determinandoEscolhas (){
-  if (frontIfElse === "1" || frontIfElse == "react" || frontIfElse == "vue" || frontIfElse === "2"|| frontIfElse == "back-end" || frontIfElse == "c" || frontIfElse == "c#" ){
+  if (teste === "1" || teste == "react" || teste == "vue" || teste === "2"|| teste == "back-end" || teste == "c" || teste == "c#" ){
     prompt('tbm deu certo')
+  } else {
+    alert("VALOR INFORMADO INCORRETO - INFORME 1 PARA A PRIMEIRA OPÇÃO E 2 PARA A SEGUNDA");
   }
-  
 }
 determinandoEscolhas();
 
