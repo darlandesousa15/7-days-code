@@ -42,5 +42,5 @@ for(let contador = 0; contador <= 8; contador ++){
     break;
   } 
 }
-document.write("<br>SEUS DADOS FORAM GRAVADOS, OBRIGADO POR PARTICIPAR<br><h2>***PARABÉNS***</h2>");
+document.write("<br>SEUS DADOS FORAM GRAVADOS, OBRIGADO POR PARTICIPAR<br>IGNORE CASO ALGUMA RESPOSTA ESTEJA INCORRETA<br><h2>***PARABÉNS***</h2>");
 
