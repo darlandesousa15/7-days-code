@@ -20,3 +20,10 @@ if (chute == numeroPensado){
     }
 }
 fazendoChute();
+
+function comparaChute (){
+    if (tentativas == "0") {
+        document.write("<h2>Você excedeu as tentativas! O número penssado foi " + numeroPensado + "<br> Tente novamente atualizando a página e boa sorte! :D </h2>");
+    }
+}
+comparaChute(tentativas);
