@@ -1,6 +1,6 @@
-alert("Jogo de adivinhação, vamos jogar ? Adivinhe um numero de 1 a 7");
+alert("Jogo de adivinhação, vamos jogar ? Adivinhe um numero de 1 a 10");
 
-let numeroPensado = Math.round(Math.random() * 7);
+let numeroPensado = Math.round(Math.random() * 10);
 let chute = parseInt(prompt("Chute um valor"));
 let tentativas = 3;
 
