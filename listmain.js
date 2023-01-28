@@ -14,7 +14,7 @@ function adicionandoLista (){
     const adicionarLista = prompt("Deseja adicionar mais algum produto a sua lista ? Responda 'sim ou não'");
     while (adicionarLista == "sim" || adicionarLista == "s" ) {
         criandoLista();
-        if (adicionarLista == "não" || adicionarLista == "n" || adicionarLista == "nao" || adicionarLista == "ñ");
+        if (adicionarLista === "não" || adicionarLista === "n" || adicionarLista === "nao" || adicionarLista === "ñ");
     break;
     }
 }
@@ -39,4 +39,6 @@ function criandoLista () {
         limpeza.push(produtos);
     }
 }
+adicionandoLista();
 
+alert(`Lista de Compras:\n Frutas: ${fruta} \n Legumes: ${legumes} \n Laticinio: ${laticinio} \n Congelado: ${congelado} \n Limpeza: ${limpeza} `);
