@@ -33,7 +33,7 @@ function adicionandoLista (){
         break;
     }
     document.write("<h1>Frutas: " + fruta + "<br>Legumes: " + legumes + "<br>Laticinio: " + laticinio + "<br>Congelado: " + congelado + "<br>Higiene: " + higiene + "<br>Limpeza: " + limpeza);
-    alert("Sua lista foi gerada!")
+    alert("Sua lista foi gerada! Agradeço pela oportunidade :D")
 }   
 adicionandoLista();
 
