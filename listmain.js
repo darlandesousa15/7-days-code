@@ -13,14 +13,14 @@ alert("Nesta página você irá criar sua lista de compras, onde iremos organiza
 function adicionandoLista (){
     const adicionarLista = prompt("Deseja adicionar mais algum produto a sua lista ? Responda 'sim ou não'");
     while (adicionarLista === "sim" || adicionarLista === "s") {
-        produtos = prompt("Qual produto será adicionado?");
-        categoriaProdutos = prompt("Qual categoria este produto se encaixa ? 'fruta' 'legumes' 'laticinio' 'congelado' 'higiene' 'limpeza'");
+        produtos = push(prompt("Qual produto será adicionado?"));
+        categoriaProdutos = push(prompt("Qual categoria este produto se encaixa ? 'fruta' 'legumes' 'laticinio' 'congelado' 'higiene' 'limpeza'"));
         if (adicionarLista != "sim" || adicionarLista != "s") {
             break;
         }
         
         adicionandoLista();
-        
+
         if (categoriaProdutos === "fruta"){
             fruta.push(produtos);
         }else if (categoriaProdutos === "legumes"){
