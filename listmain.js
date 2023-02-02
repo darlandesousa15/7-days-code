@@ -15,7 +15,12 @@ function adicionandoLista (){
     while (adicionarLista === "sim" || adicionarLista === "s") {
         produtos = prompt("Qual produto será adicionado?");
         categoriaProdutos = prompt("Qual categoria este produto se encaixa ? 'fruta' 'legumes' 'laticinio' 'congelado' 'higiene' 'limpeza'");
+        if (adicionarLista != "sim" || adicionarLista != "s") {
+            break;
+        }
+        
         adicionandoLista();
+        
         if (categoriaProdutos === "fruta"){
             fruta.push(produtos);
         }else if (categoriaProdutos === "legumes"){
@@ -29,8 +34,7 @@ function adicionandoLista (){
         }else if (categoriaProdutos === "limpeza"){
             limpeza.push(produtos);
     }
-        if (adicionarLista === "não" || adicionarLista === "n" || adicionarLista === "nao" || adicionarLista === "ñ");
-        break;
+
     }
     document.write("<h1>Frutas: " + fruta + "<br>Legumes: " + legumes + "<br>Laticinio: " + laticinio + "<br>Congelado: " + congelado + "<br>Higiene: " + higiene + "<br>Limpeza: " + limpeza);
     alert("Sua lista foi gerada! Agradeço pela oportunidade :D")
