@@ -15,24 +15,22 @@ function adicionandoLista (){
     while (adicionarLista === "sim" || adicionarLista === "s") {
         produtos = push(prompt("Qual produto será adicionado?"));
         categoriaProdutos = push(prompt("Qual categoria este produto se encaixa ? 'fruta' 'legumes' 'laticinio' 'congelado' 'higiene' 'limpeza'"));
-        if (adicionarLista != "sim" || adicionarLista != "s") {
+        if (adicionarLista != "sim" && adicionarLista != "s") {
             break;
         }
         
-        adicionandoLista();
-
         if (categoriaProdutos === "fruta"){
-            fruta.push(produtos);
+            fruta.push(produtos[produtos.length - 1]);
         }else if (categoriaProdutos === "legumes"){
-            legumes.push(produtos);
+            legumes.push(produtos[produtos.length - 1]);
         }else if (categoriaProdutos === "laticinio"){
-            laticinio.push(produtos);
+            laticinio.push(produtos[produtos.length - 1]);
         }else if (categoriaProdutos === "congelado"){
-            congelado.push(produtos);
+            congelado.push(produtos[produtos.length - 1]);
         }else if (categoriaProdutos === "higiene"){
-            higiene.push(produtos);
+            higiene.push(produtos[produtos.length - 1]);
         }else if (categoriaProdutos === "limpeza"){
-            limpeza.push(produtos);
+            limpeza.push(produtos[produtos.length - 1]);
     }
 
     }
@@ -40,4 +38,3 @@ function adicionandoLista (){
     alert("Sua lista foi gerada! Agradeço pela oportunidade :D")
 }   
 adicionandoLista();
-
