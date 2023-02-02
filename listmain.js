@@ -11,30 +11,27 @@ let limpeza = [];
 alert("Nesta página você irá criar sua lista de compras, onde iremos organizala e poupar sua caminhada e tempo.");
 
 function adicionandoLista (){
-    const adicionarLista = prompt("Deseja adicionar mais algum produto a sua lista ? Responda 'sim ou não'");
+    let adicionarLista = prompt("Deseja adicionar mais algum produto a sua lista ? Responda 'sim ou não'");
     while (adicionarLista === "sim" || adicionarLista === "s") {
-        produtos = push(prompt("Qual produto será adicionado?"));
-        categoriaProdutos = push(prompt("Qual categoria este produto se encaixa ? 'fruta' 'legumes' 'laticinio' 'congelado' 'higiene' 'limpeza'"));
-        if (adicionarLista != "sim" && adicionarLista != "s") {
-            break;
-        }
-        
-        if (categoriaProdutos === "fruta"){
-            fruta.push(produtos[produtos.length - 1]);
+        let novoProduto = prompt("Qual produto será adicionado?");
+        let novaCategoria = prompt("Qual categoria este produto se encaixa ? 'fruta' 'legumes' 'laticinio' 'congelado' 'higiene' 'limpeza'");
+        produtos.push(novoProduto);
+        categoriaProdutos.push(novaCategoria);
+    
+        if (novaCategoria === "fruta"){
+            fruta.push(novoProduto);
         }else if (categoriaProdutos === "legumes"){
-            legumes.push(produtos[produtos.length - 1]);
+            legumes.push(novoProduto);
         }else if (categoriaProdutos === "laticinio"){
-            laticinio.push(produtos[produtos.length - 1]);
+            laticinio.push(novoProduto);
         }else if (categoriaProdutos === "congelado"){
-            congelado.push(produtos[produtos.length - 1]);
+            congelado.push(novoProduto);
         }else if (categoriaProdutos === "higiene"){
-            higiene.push(produtos[produtos.length - 1]);
+            higiene.push(novoProduto);
         }else if (categoriaProdutos === "limpeza"){
-            limpeza.push(produtos[produtos.length - 1]);
+            limpeza.push(novoProduto);
+        }
     }
+    adicionandoLista = prompt("Deseja adicionar mais algum produto a sua lista ? Responda 'sim ou não'");
 
-    }
-    document.write("<h1>Frutas: " + fruta + "<br>Legumes: " + legumes + "<br>Laticinio: " + laticinio + "<br>Congelado: " + congelado + "<br>Higiene: " + higiene + "<br>Limpeza: " + limpeza);
-    alert("Sua lista foi gerada! Agradeço pela oportunidade :D")
-}   
-adicionandoLista();
+    document.write("<h1>Frutas: " + fruta + "<br>Legumes: " + legumes + "<br>Laticinio: " + laticinio + "<br>Congelado: " + congelado + "<br>Higiene: " + higiene);
