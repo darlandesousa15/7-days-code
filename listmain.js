@@ -8,7 +8,7 @@ let higiene = [];
 let limpeza = [];
 
 
-alert("Nesta página você irá criar sua lista de compras, onde iremos organizala e poupar sua caminhada e tempo.");
+alert("Nesta página você irá criar sua lista de compras, onde iremos organizala e poupar sua caminhada e tempo.")
 
 function adicionandoLista (){
     let adicionarLista = prompt("Deseja adicionar mais algum produto a sua lista ? Responda 'sim ou não'");
