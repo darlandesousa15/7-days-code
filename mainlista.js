@@ -1,3 +1,5 @@
+const novaLista = [];
+const novaCategoria = [];
 const lista = [];
 const fruta = [];
 const higiente = [];
@@ -11,8 +13,10 @@ function testando (){
 	const lista = prompt("Qual produto será adicionado a lista ?")
 	alert("Categorias disponiveis: - fruta - limpeza - higiene - congelado")
 	const categoria = prompt("Qual categoria pertencia esse produto ?")
-	if (categoria === "fruta")
-		categoria.push(fruta)
+	lista.push(novaLista);
+	categoria.push(novaCategoria);
+	if (novaCategoria === "fruta")
+		fruta.push(novaLista)
 }
 
 testando();
